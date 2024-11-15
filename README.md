@@ -132,14 +132,6 @@ Lors du déploiement sur un serveur de production, assurez-vous de :
 3. Mettre en place un serveur web comme Apache ou Nginx pour pointer vers le dossier `public/` du backend Laravel.
 4. Utiliser un serveur de base de données comme MySQL, PostgreSQL, ou SQLite en fonction de votre configuration.
 
----
-
-## 📝 Auteurs
-
-- Nom de l'auteur ou de l'équipe : [Votre nom ou l'équipe]
-- Version : 1.0.0
-
----
 
 ## 🧑‍💻 Contribuer
 
