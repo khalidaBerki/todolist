@@ -132,15 +132,3 @@ Lors du déploiement sur un serveur de production, assurez-vous de :
 3. Mettre en place un serveur web comme Apache ou Nginx pour pointer vers le dossier `public/` du backend Laravel.
 4. Utiliser un serveur de base de données comme MySQL, PostgreSQL, ou SQLite en fonction de votre configuration.
 
-
-## 🧑‍💻 Contribuer
-
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, suivez ces étapes :
-
-1. Forkez le dépôt.
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/feature-name`).
-3. Effectuez vos modifications et committez-les (`git commit -am 'Add new feature'`).
-4. Poussez votre branche (`git push origin feature/feature-name`).
-5. Créez une Pull Request pour discuter des modifications.
-
----
