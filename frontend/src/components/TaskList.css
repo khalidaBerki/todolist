@@ -1,0 +1,45 @@
+/* Animation pour l'ajout de tâches en cours */
+.task-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  .task-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .task-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .task-exit-active {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  /* Tâches en cours : redimensionner dynamiquement */
+  .flex-1.bg-yellow-100 {
+    transition: height 0.3s ease-in-out;
+    max-height: none; /* Pas de limite de hauteur */
+  }
+  
+  /* Pour le bloc des tâches complètes : hauteur fixe avec défilement si nécessaire */
+  .flex-1.bg-green-100 {
+    overflow-y: auto; /* Permet un défilement si le contenu dépasse */
+    max-height: 500px; /* Limite la hauteur de ce bloc */
+  }  
+  
+  .task-remove {
+    opacity: 0;
+    transform: translateX(-100%); /* Animations pour faire disparaître la tâche */
+  }
+  
+  /* Animation pour l'effet de remontée */
+  .task-enter-active, .task-exit-active {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
