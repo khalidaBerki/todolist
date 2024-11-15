@@ -61,7 +61,7 @@ Avant d'installer l'application, assurez-vous d'avoir installé les outils suiva
 
 3. Démarrez le serveur de développement :
     ```bash
-    npm start
+    npm run dev
     ```
 
 Cela démarrera l'application frontend et vous pourrez y accéder depuis votre navigateur à l'adresse `http://localhost:3000` (par défaut).
