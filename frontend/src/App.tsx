@@ -21,13 +21,13 @@ const App: React.FC = () => {
             <div className="container mx-auto flex justify-between items-center">
               <h1 className="text-cvs-marron text-border font-black text-3xl">Todo List</h1>
               <nav>
-                <ul className="flex space-x-4 relative">
+                <ul className="flex space-x-1 relative">
                   <li>
                     <NavLink
                       to="/"
                       className={({ isActive }) =>
                         isActive
-                          ? 'text-cvs-marron font-bold bg-cvs-blue px-6 py-4 rounded-xl'
+                          ? 'text-cvs-marron font-bold bg-cvs-blue px-1 py-4 rounded-xl'
                           : 'text-cvs-marron font-bold hover:underline hover:text-cvs-rose px-4 py-2'
                       }
                     >
@@ -39,7 +39,7 @@ const App: React.FC = () => {
                       to="/in-progress"
                       className={({ isActive }) =>
                         isActive
-                          ? 'text-cvs-marron font-bold bg-cvs-blue px-6 py-4 rounded-xl'
+                          ? 'text-cvs-marron font-bold bg-cvs-blue px-1 py-4 rounded-xl'
                           : 'text-cvs-marron font-bold hover:underline hover:text-cvs-rose px-4 py-2'
                       }
                     >
@@ -51,7 +51,7 @@ const App: React.FC = () => {
                       to="/completed"
                       className={({ isActive }) =>
                         isActive
-                          ? 'text-cvs-marron font-bold bg-cvs-blue px-6 py-4 rounded-xl'
+                          ? 'text-cvs-marron font-bold bg-cvs-blue px-1 py-4 rounded-xl'
                           : 'text-cvs-marron font-bold hover:underline hover:text-cvs-rose px-4 py-2'
                       }
                     >
@@ -63,9 +63,13 @@ const App: React.FC = () => {
                     onMouseEnter={() => setShowColorMenu(true)} // Afficher le menu au survol
                     onMouseLeave={() => setShowColorMenu(false)} // Masquer le menu quand on quitte
                   >
-                    <NavLink
+                     <NavLink
                       to="/settings"
-                      className="text-cvs-marron font-bold hover:underline hover:text-cvs-rose px-4 py-2"
+                      className={({ isActive }) =>
+                        isActive
+                          ? 'text-cvs-marron font-bold bg-cvs-blue px-1 py-4 rounded-xl'
+                          : 'text-cvs-marron font-bold hover:underline hover:text-cvs-rose px-4 py-2'
+                      }
                     >
                       Paramètres
                     </NavLink>
